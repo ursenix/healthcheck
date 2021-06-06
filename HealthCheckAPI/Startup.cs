@@ -34,7 +34,7 @@ namespace HealthCheckAPI
 
             services.AddHealthChecks()
                     .AddCheck<HealthInspector>("MyApp Health")
-                    .AddSqlServer(  @"Server=.\sqlexpress,1433;Database=HealthCheckDB;Integrated Security=False;User Id=sa;Password=JamesBond@84/3;MultipleActiveResultSets=True", 
+                    .AddSqlServer(  @"Server=.\sqlexpress,1433;Database=HealthCheckDB;Integrated Security=False;User Id=sa;Password=YourStrongPassword;MultipleActiveResultSets=True", 
                                     // Following are the optional parameters
                                     "Select 1", // Default query that perform on the Server
                                     "SQL Health", 
